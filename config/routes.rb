@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :teachers
 
   get 'reports/subjects', to: 'reports#subjects'
+  get 'visitors', to: 'visitors#index'
 end
