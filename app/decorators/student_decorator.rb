@@ -8,4 +8,8 @@ class StudentDecorator < BaseDecorator
     notes = [0] if notes.empty?
     h.number_with_precision(notes.inject(:+).to_f / notes.size, precision: 2)
   end
+
+  def birthday
+    (birthdate) ? birthdate.strftime("%Y-%m_%d") : I18n.t('shared.not_provided')
+  end
 end
