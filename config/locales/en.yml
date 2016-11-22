@@ -21,6 +21,7 @@ en:
     add_new_item: Add new one
     subjects: subjects
     not_provided: Not provided
+    choose: Choose from select
   student:
     columns:
       first_name: first name
@@ -36,3 +37,8 @@ en:
       full_name: Full name
       birthdate: Birthdate
       avg_notes: Notes avarange
+  payment:
+    columns:
+      student: Student
+      amount: Amount
+      completion_date: Date
