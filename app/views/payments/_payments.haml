@@ -1,0 +1,8 @@
+- students.each do |student|
+  %tr
+    %td= student.decorate.full_name
+    - student_payments = payments_by_month_for student
+    - month_names_with_index.each do |month_name, month_id|
+      %td
+        %div
+          = student_payments[month_id] || '-'

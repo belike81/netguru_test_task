@@ -3,9 +3,8 @@
 %table.table.table-condensed
   %thead
     %tr
-      %th= t('payment.columns.amount')
       %th= t('payment.columns.student')
-      %th= t('payment.columns.completion_date')
-      %th= t('shared.actions')
+      - month_names_with_index(short: true).each do |month_name, month_id|
+        %th= month_name
   %tbody
-    = render payments
+    = render 'payments'
